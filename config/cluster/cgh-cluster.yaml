@@ -1,0 +1,19 @@
+apiVersion: v1
+clusters:
+- cluster:
+    insecure-skip-tls-verify: true
+    server: https://101.43.156.94:6443
+  name: cgh-cluster
+contexts:
+- context:
+    cluster: cgh-cluster
+    namespace: default
+    user: cgh-user
+  name: cgh-context
+current-context: cgh-context
+kind: Config
+preferences: {}
+users:
+- name: cgh-user
+  user:
+    token: eyJhbGciOiJSUzI1NiIsImtpZCI6ImlzV1UtYnFrNVBLUVNzMktaX1RFa2dNVzgtOEVmbC1falZIbmQ4SkUwaE0ifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImNnaC10b2tlbi1temNqbCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJjZ2giLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJjNGYzNDc4My00MTEyLTQwMzYtYTNkZC04ZmQ4MjU5YmU2NGQiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6ZGVmYXVsdDpjZ2gifQ.IeVBjntKY40y1CtpK5k9wXttRAtNfOkH_yLKdzD11qde3J5KgKpBONBmyqXVBA86l66oRTsQvideasrB1mAkTSapycnZDgrEghyCLpTw1Ye_4HnzY6E7A33icKiuxer1tFeoujQ_DFNeh4UIcFvPGyK086Sd-QeF-UYnIKeCI6J4sJy8OP84M4eenuGJP3yXs5JtFV52tfpqkSX3lwCpIb62C7vV0tY0HBRgwQ31X5cYhTmZ-7IK8J4B-yrGUaZmZts3uuUy6Qd_1067ifT_nqZVlic-Och5TdeAeyZ1sdsI1qtLo5nb--7itKTqY2NXw2JJBG0zfETFf7TutsxgzA
